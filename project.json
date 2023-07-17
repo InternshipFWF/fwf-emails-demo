@@ -1,0 +1,92 @@
+{
+  "name": "fwf-emails-demo",
+  "projectId": "0e441850-bc2c-4ef0-b29b-871d0d5cdc0f",
+  "description": "The robot reads emails applying specific filters in order to retrieve only the mail which contains a specific string in the title and an attachment. After that, it reads the attachment in order to retrieve the text from it. With the text retrieved, the robot sends an email with it.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.20.2]",
+    "UiPath.Mail.Activities": "[1.20.2]",
+    "UiPath.PDF.Activities": "[3.14.1]",
+    "UiPath.System.Activities": "[22.10.6]",
+    "UiPath.Testing.Activities": "[23.4.1]",
+    "UiPath.UIAutomation.Activities": "[23.4.7]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.6.1.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7a549392-c39f-4836-bce9-39a2b12d6212",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_ReadEmailsBasedOnFilter.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7bc721e5-7ef5-45bd-9aad-294d4ee83976",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_DownloadMailAttachment.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4a6ee064-f7de-46a7-bfda-6ce53ef2efd3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_ReadPdfFile.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "efab7f11-ba77-4ef1-9392-b871cf72e501",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\UnitTest_SendMail.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "21ddda7c-d9c6-4146-bc6b-4133d1251945",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
